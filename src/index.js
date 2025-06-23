@@ -12,6 +12,7 @@ import AddPlayerForm from './components/AddPlayerForm';
 import QuizEngine from './components/QuizEngine';
 import ScoreSummary from './components/ScoreSummary';
 import LeaderBoard from './components/LeaderBoard';
+import About from './components/About';
 
 import './styles/Basics.css';
 import './styles/Variables.css';
@@ -31,6 +32,7 @@ root.render(
             <Route path='/quiz/result' element={<ScoreSummary />} />
           </Route>
           <Route path='/leaderboard' element={<LeaderBoard />} />
+          <Route path='/about' element={<About />} />
         </Route>
       </Routes>
     </Router>  
