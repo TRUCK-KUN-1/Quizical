@@ -1,0 +1,13 @@
+:root{
+    --bg-color: rgb(228, 255, 255);
+    --nav-color: rgb(255, 255, 255);
+    --footer-color: rgb(29, 29, 29);
+    --card-color: rgb(255, 252, 245);
+    --card-Shadow-color: rgb(24, 177, 238);
+    --card-hover-color: rgba(24, 177, 238, 0.5);
+    --nav-shadow: rgb(24, 177, 238);
+    --theme-color-1: rgb(6 169 255);
+    --font-color: rgb(0, 0, 0);
+    /* --nav-font-color: rgb(255, 255, 255); */
+    --footer-font-color: rgb(255, 255, 255);
+}

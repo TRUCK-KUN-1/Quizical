@@ -1,0 +1,84 @@
+.LeaderBoard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.LeaderBoard .tableContainer{
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto 40px auto;
+  padding: 10px;
+  background-color: var(--card-color);
+  border-radius: 12px;
+  box-shadow: 0 0 15px var(--card-Shadow-color);
+  overflow-x: auto;
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--font-color);
+}
+
+.LeaderBoard table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: var(--card-color);
+  color: var(--font-color);
+}
+
+.LeaderBoard tr{
+    width: 100%;
+}
+
+.LeaderBoard th,
+.LeaderBoard td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--card-Shadow-color);
+}
+
+.LeaderBoard .name{
+    width: 50%;
+}
+
+.LeaderBoard .category{
+    width: 30%;
+}
+.LeaderBoard .score{
+    width: 20%;
+}
+
+.LeaderBoard th {
+  background-color: var(--theme-color-1);
+  color: var(--footer-font-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.LeaderBoard tr:hover {
+  background-color: var(--card-hover-color);
+}
+
+.LeaderBoard td {
+  font-size: 15px;
+}
+
+.LeaderBoard button{
+    width: 40%;
+    background-color: var(--theme-color-1);
+    color: var(--nav-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.LeaderBoard button:hover{
+    background-color: var(--card-hover-color);
+    transition: background-color 0.3s ease;
+}

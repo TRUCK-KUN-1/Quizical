@@ -1,0 +1,76 @@
+.QuizEngine{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 20px 70px 20px;
+}
+
+.QuizEngine .Question{
+    min-width: 100%;
+    min-height: 20px;
+    display: flex;
+    padding: 20px;
+    background-color: var(--card-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--card-Shadow-color);
+}
+
+.QuizEngine .Options{
+    width: 100%;
+    padding: 0px 20px 20px;
+}
+
+.QuizEngine h3{
+    color: var(--font-color);
+}
+
+.QuizEngine label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.QuizEngine label:has(input[type = "radio"]:checked){
+    background-color: rgba(24, 177, 238, 0.63);
+}
+
+.QuizEngine button{
+    margin: 0px 25% 0px;
+    background-color: var(--theme-color-1);
+    color: var(--nav-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.QuizEngine button:hover{
+    background-color: var(--card-hover-color);
+    transition: background-color 0.3s ease;
+}
+
+.QuizEngine .progressBar{
+    width: 100%;
+    text-align: center;
+}
+
+.QuizEngine progress{
+    width: 100%;
+    appearance: none;
+}
+
+.QuizEngine progress::-webkit-progress-bar {
+    background-color: var(--card-color);
+    border-radius: 10px;
+    border: 1px solid var(--theme-color-1);
+}
+
+.QuizEngine progress::-webkit-progress-value {
+    background-color: var(--theme-color-1); /* Change this for color */
+    border-radius: 10px;
+}

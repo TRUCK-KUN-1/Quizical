@@ -1,0 +1,121 @@
+.quiz{
+    min-height: 100vh;
+}
+
+.ScoreSummary{
+    aspect-ratio: 4 / 3;
+    min-width: 400px;
+    width: 60%;
+    max-width: 500px;
+    min-height: 300px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    background-color: var(--card-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--card-Shadow-color);
+}
+
+.ScoreSummary .scoreContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.ScoreSummary .details{
+    width: 50%;
+    background-color: var(--bg-color);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.ScoreSummary .details h3,
+.ScoreSummary .details p{
+    display: inline;
+}
+
+.ScoreSummary .score{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ScoreSummary progress{
+    width: 100%;
+    appearance: none;
+}
+
+.ScoreSummary progress::-webkit-progress-bar {
+    background-color: #ff7e7e;
+    border-radius: 10px;
+    /* border: 1px solid var(--theme-color-1); */
+}
+
+.ScoreSummary progress::-webkit-progress-value {
+    background-color: #63D680; /* Change this for color */
+    border-radius: 10px 0px 0px 10px;
+}
+
+.ScoreSummary .ansDetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.ScoreSummary .correct,
+.ScoreSummary .wrong{
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.ScoreSummary .correct{
+    background-color: #01f78c40;
+    color: #174340;
+}
+
+.ScoreSummary .wrong{
+    background-color: #ff1e0040;
+    color: #8A4B3A;
+}
+
+.ScoreSummary .ImpBtn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.ScoreSummary button{
+    width: 100%;
+    background-color: var(--theme-color-1);
+    color: var(--nav-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ScoreSummary button:hover{
+    background-color: var(--card-hover-color);
+    transition: background-color 0.3s ease;
+}
+
+.ScoreSummary .homeBtn{
+    margin: 0 auto;
+}
+
+.ScoreSummary a{
+    width: 50%;
+    margin: 0 auto;
+}
