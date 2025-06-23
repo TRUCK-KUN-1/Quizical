@@ -23,7 +23,7 @@ export default function Navbar() {
           <nav>
               <Link to="/">Home</Link>
               <Link to="/quiz">Start Quiz</Link>
-              <Link to="/quiz/scores">Scores</Link>
+              <Link to="/quiz/leaderboard">LeaderBoard</Link>
               <Link to="/about">About</Link>
               <input type="checkbox" id="light-dark-inp" />
               <label htmlFor="light-dark-inp" className="light-dark">
